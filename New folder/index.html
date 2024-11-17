@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal’s Games!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bilal’s Games!</h1>
+        <p>Relive your childhood! Pick a game to play below:</p>
+    </header>
+    <main>
+        <div class="game-list">
+            <div class="game" onclick="startFlappyBird()">
+    <img src="images/flappybird-banner.jpg" alt="Flappy Bird" class="game-banner">
+    <h2>Flappy Bird</h2>
+    <div class="game-preview">🐦 Tap to Play!</div>
+</div>
+<div class="game" onclick="startMario()">
+    <img src="images/mario-banner.jpg" alt="Mario" class="game-banner">
+    <h2>Mario</h2>
+    <div class="game-preview">🍄 Tap to Play!</div>
+</div>
+<div class="game" onclick="startSnake()">
+    <img src="images/snake-banner.jpg" alt="Snake" class="game-banner">
+    <h2>Snake</h2>
+    <div class="game-preview">🐍 Tap to Play!</div>
+</div>
+
+        </div>
+    </main>
+    <div id="game-area">
+    <button id="close-game" onclick="closeGame()">Close Game</button>
+    <iframe 
+        id="game-frame" 
+        src="https://flappybird.io/" 
+        sandbox="allow-scripts allow-same-origin">
+    </iframe>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
